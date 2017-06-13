@@ -35,6 +35,7 @@ class OneYearCalendar {
         add_action( 'admin_post_lancis_calendar_update_dates', array(&$this, 'update_dates') );
 
         add_shortcode( 'one-year-calendar', array(&$this, 'public_calendar') );
+        add_shortcode( 'one-year-calendar-event-list', array(&$this, 'event_list') );
         // echo $this->plugin_url; exit;
     }
 
@@ -48,6 +49,19 @@ class OneYearCalendar {
         $this->is_public = true;
         $this->enqueue_public_assets();
         $this->generate_calendar();
+    }
+
+    public function event_list($attributes)
+    {
+        $a = shortcode_atts([
+                'format' => 'Y-m-d'
+            ], $attributes);
+        echo '<ul id="one-year-calendar-event-list">';
+        foreach ($this->dates as $key => $value) {
+            $date = date($a['format'], strtotime(date('Y') . '-' . $key));
+            echo '<li>' . $date . ' - ' . $value . '</li>';
+        }
+        echo '</ul>';
     }
 
     public function calendar_menu() {
@@ -78,6 +92,7 @@ class OneYearCalendar {
         ?>
         <div id="date_form" style="display:none;">
             <form action="/wp-admin/admin-post.php?" method="post">
+            <?php wp_nonce_field( 'one-year-calendar-update-date_' ); ?>
             <input type="hidden" name="action" value="lancis_calendar_update_dates">
             <input type="hidden" name="date" value="" id="lancis_calendar_item_date">
             <table class="form-table">
@@ -204,6 +219,7 @@ class OneYearCalendar {
 
     public function update_dates()
     {
+        check_admin_referer( 'one-year-calendar-update-date_' );
         $dates = $this->dates;
         $dates[$_POST['date']] = $_POST['value'];
         update_option('one_year_calendar_settings', serialize($dates));
