@@ -7,7 +7,7 @@ Version: 1.0
 Author: Francis Lalnunmawia
 Author URI: http://lancis.in
 Author Email: francis@lancis.in
-License: .......
+License: MIT
 */
 
 class OneYearCalendar {
@@ -76,6 +76,8 @@ class OneYearCalendar {
         ?>
         <div class="<?php echo $class; ?>">
             <h1>One Year Calendar</h1>
+            <p>You can use [one-year-calendar] to display the calendar.</p>
+            <p>To display list of dates, use [one-year-calendar-event-list] with optional "format" attribute. eg [one-year-calendar-event-list format="dS M, Y"] </p>
             <div>
                 <?php
                 for ($i=1; $i <= 12; $i++) { 
