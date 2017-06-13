@@ -1,0 +1,147 @@
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=4d844fffbc5dc8551a780cc5c9c9fff1)
+ * Config saved to config.json and https://gist.github.com/4d844fffbc5dc8551a780cc5c9c9fff1
+ */
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+th {
+  text-align: left;
+}
+.one-year-calendar .table {
+  background-color: #ffffff; 
+  width: 24%;
+  margin-right: 1%;
+  float: left;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-spacing: 0;
+}
+.one-year-calendar .table:nth-child(4n+1) {
+  clear:left;
+}
+.one-year-calendar .table:nth-child(4n) {
+  clear:right;
+}
+.one-year-calendar .table > tbody > tr > td > a{
+  display: block;
+  padding: 8px;
+  text-align: center;
+}
+.one-year-calendar .table > thead > tr > th,
+.one-year-calendar .table > tbody > tr > th,
+.one-year-calendar .table > tbody > tr.days > td,
+.one-year-calendar .table > tfoot > tr > th{
+  padding:8px;
+}
+.one-year-calendar .table > thead > tr > th,
+.one-year-calendar .table > tbody > tr > th,
+.one-year-calendar .table > tfoot > tr > th,
+.one-year-calendar .table > thead > tr > td,
+.one-year-calendar .table > tbody > tr > td,
+.one-year-calendar .table > tfoot > tr > td {
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+.one-year-calendar .table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+}
+.one-year-calendar .table > caption + thead > tr:first-child > th,
+.one-year-calendar .table > colgroup + thead > tr:first-child > th,
+.one-year-calendar .table > thead:first-child > tr:first-child > th,
+.one-year-calendar .table > caption + thead > tr:first-child > td,
+.one-year-calendar .table > colgroup + thead > tr:first-child > td,
+.one-year-calendar .table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.one-year-calendar .table > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+.one-year-calendar .table-bordered {
+  border: 1px solid #dddddd;
+}
+.one-year-calendar .table-bordered > thead > tr > th,
+.one-year-calendar .table-bordered > tbody > tr > th,
+.one-year-calendar .table-bordered > tfoot > tr > th,
+.one-year-calendar .table-bordered > thead > tr > td,
+.one-year-calendar .table-bordered > tbody > tr > td,
+.one-year-calendar .table-bordered > tfoot > tr > td {
+  border: 1px solid #dddddd;
+}
+.one-year-calendar .table-bordered > thead > tr > th,
+.one-year-calendar .table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.one-year-calendar .table > thead > tr > td.success,
+.one-year-calendar .table > tbody > tr > td.success,
+.one-year-calendar .table > tfoot > tr > td.success,
+.one-year-calendar .table > thead > tr > th.success,
+.one-year-calendar .table > tbody > tr > th.success,
+.one-year-calendar .table > tfoot > tr > th.success,
+.one-year-calendar .table > thead > tr.success > td,
+.one-year-calendar .table > tbody > tr.success > td,
+.one-year-calendar .table > tfoot > tr.success > td,
+.one-year-calendar .table > thead > tr.success > th,
+.one-year-calendar .table > tbody > tr.success > th,
+.one-year-calendar .table > tfoot > tr.success > th {
+  background-color: #dff0d8;
+}
+.one-year-calendar .table-hover > tbody > tr > td.success:hover,
+.one-year-calendar .table-hover > tbody > tr > th.success:hover,
+.one-year-calendar .table-hover > tbody > tr.success:hover > td,
+.one-year-calendar .table-hover > tbody > tr:hover > .success,
+.one-year-calendar .table-hover > tbody > tr.success:hover > th {
+  background-color: #d0e9c6;
+}
+.one-year-calendar .table > thead > tr > td.info,
+.one-year-calendar .table > tbody > tr > td.info,
+.one-year-calendar .table > tfoot > tr > td.info,
+.one-year-calendar .table > thead > tr > th.info,
+.one-year-calendar .table > tbody > tr > th.info,
+.one-year-calendar .table > tfoot > tr > th.info,
+.one-year-calendar .table > thead > tr.info > td,
+.one-year-calendar .table > tbody > tr.info > td,
+.one-year-calendar .table > tfoot > tr.info > td,
+.one-year-calendar .table > thead > tr.info > th,
+.one-year-calendar .table > tbody > tr.info > th,
+.one-year-calendar .table > tfoot > tr.info > th {
+  background-color: #d9edf7;
+}
+.one-year-calendar .table > thead > tr > td.warning,
+.one-year-calendar .table > tbody > tr > td.warning,
+.one-year-calendar .table > tfoot > tr > td.warning,
+.one-year-calendar .table > thead > tr > th.warning,
+.one-year-calendar .table > tbody > tr > th.warning,
+.one-year-calendar .table > tfoot > tr > th.warning,
+.one-year-calendar .table > thead > tr.warning > td,
+.one-year-calendar .table > tbody > tr.warning > td,
+.one-year-calendar .table > tfoot > tr.warning > td,
+.one-year-calendar .table > thead > tr.warning > th,
+.one-year-calendar .table > tbody > tr.warning > th,
+.one-year-calendar .table > tfoot > tr.warning > th {
+  background-color: #fcf8e3;
+}
+.one-year-calendar .table > thead > tr > td.danger,
+.one-year-calendar .table > tbody > tr > td.danger,
+.one-year-calendar .table > tfoot > tr > td.danger,
+.one-year-calendar .table > thead > tr > th.danger,
+.one-year-calendar .table > tbody > tr > th.danger,
+.one-year-calendar .table > tfoot > tr > th.danger,
+.one-year-calendar .table > thead > tr.danger > td,
+.one-year-calendar .table > tbody > tr.danger > td,
+.one-year-calendar .table > tfoot > tr.danger > td,
+.one-year-calendar .table > thead > tr.danger > th,
+.one-year-calendar .table > tbody > tr.danger > th,
+.one-year-calendar .table > tfoot > tr.danger > th {
+  background-color: #f2dede;
+}
